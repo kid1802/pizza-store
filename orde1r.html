@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maps.google.com/maps/api/js?key={API_KEY}}"></script>
+    <title>Order</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Donny's Pizza</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Pizza Gallery</a></li>
+            <li><a href="byo.html">Build Your Own</a></li>
+            <li><a class="current" href="order.html">Order</a></li>
+        </ul>
+    </nav>
+    <div>
+
+    <div id="userDetails">
+        <p id="details"></p>
+        Enter your Name:<br>
+        <input type="text" name="name"><br>
+        Address: <br>
+        <textarea id="address" rows="4" cols="50"></textarea><br>
+        Email:<br>
+        <input type="email" name="email"><br>
+        Telephone:<br>
+        <input type="tel" name="usrtel"><br>
+        <div id="btngroup">
+        <input id="Submit" type="button" value="Order"/> 
+        </div>
+     </div>
+</div>
+    <script>
+    window.onload=function(){
+
+        var size=sessionStorage.getItem('pizzasize');
+        var crust=sessionStorage.getItem('crustsize');
+        var cheese=sessionStorage.getItem('cheese');
+        var toppings = sessionStorage.getItem('toppings');
+      }
+    </script>
+</body>
+
+</html>
